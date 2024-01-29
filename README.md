@@ -1,82 +1,19 @@
 
---
 
+### Program that resolves a sudoku.
 
+Example 1:
 
-## The program must :
+Example of output for a valid sudoku :
 
-* Compile successfully\
-* Assemble all of the tetrominoes in order to create the smallest square possible.\
-* Identify each tetromino in the solution by printing them with uppercase latin letters (A for the first one, B for the second, etc)\
-* Expect at least one tetromino in the text file\
-* In case of bad format on the tetrominoes or bad file format it should print ERROR
-
-
-#### Example of a text File
-
-#...\
-#...\
-#...\
-#...
-
-....\
-....\
-..##\
-..##
-
-If it isn't possible to form a complete square, the program should leave spaces between the tetrominoes. 
-#### For example:
-ABB.\
-ABB.\
-A...\
-A...
-
-$ cat -e sample.txt\
-...#$\
-...#$\
-...#$\
-...#$\
-$\
-....$\
-....$\
-....$\
-####$\
-$\
-.###$\
-...#$\
-....$\
-....$\
-$\
-....$\
-..##$\
-.##.$\
-....$\
-$\
-....$\
-.##.$\
-.##.$\
-....$\
-$\
-....$\
-....$\
-##..$\
-.##.$\
-$\
-##..$\
-.#..$\
-.#..$\
-....$\
-$\
-....$\
-###.$\
-.#..$\
-....$
-
-$ go run . sample.txt | cat -e\
-ABBBB.$\
-ACCCEE$\
-AFFCEE$\
-A.FFGG$\
-HHHDDG$\
-.HDD.G$\
+$ go run . ".96.4...1" "1...6...4" "5.481.39." "..795..43" ".3..8...." "4.5.23.18" ".1.63..59" ".59.7.83." "..359...7" | cat -e
+3 9 6 2 4 5 7 8 1$
+1 7 8 3 6 9 5 2 4$
+5 2 4 8 1 7 3 9 6$
+2 8 7 9 5 1 6 4 3$
+9 3 1 4 8 6 2 7 5$
+4 6 5 7 2 3 9 1 8$
+7 1 2 6 3 8 4 5 9$
+6 5 9 1 7 4 8 3 2$
+8 4 3 5 9 2 1 6 7$
 $
